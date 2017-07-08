@@ -1,10 +1,22 @@
 [package]
 name = "entropy"
 version = "0.0.1"
-authors = ["Cole Onics <cole@onicslabs.com>"]
+authors = ["Cole Onics <cole@onicslabs.org>"]
 
 [dependencies]
 libc = "*"
+byteorder = "0.3"
 merkle = "*"
 mio = "0.6"
-rustc-serialize = "*"
+num = "0.1"
+rand = "0.3"
+rust-crypto = "0.2"
+rustc-serialize = "0.3"
+secp256k1 = "0.6"
+serde = "0.6"
+strason = "0.3"
+
+[dependencies.jsonrpc]
+version = "0.7" # for serde macros
+default-features = false
+

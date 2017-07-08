@@ -1,12 +1,6 @@
-// Here will borrowing from Andrew's serilization code.
-// Instead of directly handling the networking ourselves,
-// let's have mio do the heavy lifting.
-// 
 // Rust Bitcoin Library
 // Written in 2014 by
 //   Andrew Poelstra <apoelstra@wpsoftware.net>
-// Modified in 2017 by
-//   Cole Onics <cole@onicslabs.com>
 //
 // To the extent possible under law, the author(s) have dedicated all
 // copyright and related and neighboring rights to this software to
@@ -32,9 +26,6 @@ use serialize::hex::ToHex;
 use network::encodable::{ConsensusDecodable, ConsensusEncodable};
 use util::hash::Sha256dHash;
 use util;
-
-use mio;
-use mio::tcp::{TcpListener, TcpStream};
 
 /// Objects which are referred to by hash
 pub trait BitcoinHash {
