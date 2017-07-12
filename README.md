@@ -13,11 +13,11 @@ Coding in Rust either makes you run away screaming, left indifferent, or enthuse
 
 ## Implementation Details
 
-By harnessing the hard work Rust's compiler does saving us from ourselves, we can export modules as importable C libraries into existing Bitcoin Core code.<br>
+By harnessing the hard work Rust's compiler does saving us from ourselves, we can export modules as importable C libraries into existing Bitcoin Unlimited code.<br>
 In this way, we can break development into small, achievable chunks.
 
-We will use the latest version of Rust (https://rustup.com), and the latest stable build of Bitcoin Core.<br>
-Similar to other projects, we will target a static release of Core code.
+We will use the latest version of Rust (https://rustup.com), and the latest stable build of Bitcoin Unlimited.<br>
+Similar to other projects, we will target a static release of Unlimited code.
 
 ## Phase 1: Building the Wallet Modules
 
@@ -42,7 +42,7 @@ Building a full-node is the long-term goal for this project.
 First things last, we need to develop the tooling and architecture for this undertaking. 
 
 During the research phase, I found that importing C++ objects (nested templated structs are evil) into Rust is a pain in the ass.<br> 
-Especially for a project the size of Bitcoin Core, it would likely prove torturous debugging such a monstrosity, let alone writing it.
+Especially for a project the size of Bitcoin Unlimited, it would likely prove torturous debugging such a monstrosity, let alone writing it.
 
 The torment of dealing with that level of complexity led me to seek simpler solutions.
 
@@ -50,7 +50,7 @@ Instead of importing C++ into Rust, lets try importing Rust into C++.
 
 Resources (blogs, white papers & [documentation](https://doc.rust-lang.org/book/ffi.html#callbacks-from-c-code-to-rust-functions)) are out there on exporting Rust code into C libraries that can be imported by any language that understands C calling conventions. 
 
-Honestly, this seems like a much smoother approach, and allows us to harness the enormous test corpus already present in Core code.
+Honestly, this seems like a much smoother approach, and allows us to harness the enormous test corpus already present in Unlimited code.
 
 ## Contributing & What's Next 
 
