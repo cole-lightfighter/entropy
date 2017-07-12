@@ -68,5 +68,5 @@ Feel free to start poking from day one, but the interesting stuff probably won't
 
 ## Contact
 
-Feel free to email me here: cole [at] onicslabs.com<br>
-Twitter: @onicslabs
+Feel free to email me here: info [at] onicsla.bz<br>
+Twitter: @cole_onics
