@@ -26,10 +26,12 @@ Features implemented during Phase 1 (partial list):
   - Transactions
   - Serialization
   - Validation
-  - BIP features related to wallets
+  - Networking code based on the mio library
+  - BUIP features related to wallets
     - Hardware Wallet integration
     - Multisig
-    - Segregated Witness
+    - Xthin blocks
+    - Blocktorrent or bu-relay
     - Hierarchically Deterministic (HD) keys/addresses
     - Confidential Transactions (maybe)
     - ...
